@@ -5,75 +5,80 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy - Postiz</title>
 <style>
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 2.5rem 1.5rem 4rem;
-    line-height: 1.6;
-    color: #1a1a1a;
-  }
-  h1 { font-size: 2rem; margin-bottom: 0.25rem; }
-  h2 { font-size: 1.3rem; margin-top: 2.25rem; border-bottom: 1px solid #e5e5e5; padding-bottom: 0.3rem; }
-  h3 { font-size: 1.05rem; margin-top: 1.5rem; }
-  .updated { color: #666; font-size: 0.95rem; margin-bottom: 2rem; }
-  a { color: #0060df; }
-  code {
-    background: #f4f4f4;
-    padding: 0.1rem 0.35rem;
-    border-radius: 3px;
-    font-size: 0.9em;
-  }
-  ul { padding-left: 1.4rem; }
-  li { margin-bottom: 0.35rem; }
+body {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+max-width: 760px;
+margin: 0 auto;
+padding: 2.5rem 1.5rem 4rem;
+line-height: 1.6;
+color: #1a1a1a;
+}
+h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+h2 { font-size: 1.3rem; margin-top: 2.25rem; border-bottom: 1px solid #e5e5e5; padding-bottom: 0.3rem; }
+h3 { font-size: 1.05rem; margin-top: 1.5rem; }
+.updated { color: #666; font-size: 0.95rem; margin-bottom: 2rem; }
+a { color: #0060df; }
+code {
+background: #f4f4f4;
+padding: 0.1rem 0.35rem;
+border-radius: 3px;
+font-size: 0.9em;
+}
+ul { padding-left: 1.4rem; }
+li { margin-bottom: 0.35rem; }
 </style>
 </head>
 <body>
-
 <h1>Privacy Policy</h1>
 <p class="updated"><strong>Last updated:</strong> August 9, 2026</p>
-
 <p>This privacy policy describes how this application ("the App"), a self-hosted
 instance of Postiz, handles information when connecting to Facebook, Instagram,
-and TikTok on behalf of its owner/operator.</p>
-
+TikTok, and Pinterest on behalf of its owner/operator.</p>
 <h2>Who operates this App</h2>
 <p>This App is operated by a single individual for personal use, to schedule
 and publish posts to their own Facebook Pages, connected Instagram account,
-and TikTok account. It is not offered as a public service to other users.</p>
-
+TikTok account, and Pinterest account. It is not offered as a public service
+to other users.</p>
 <h2>What information is accessed</h2>
-
 <h3>Facebook and Instagram</h3>
 <p>The App connects to the Facebook Graph API using OAuth to access only the
 information necessary to schedule and publish content, including:</p>
 <ul>
-  <li>Basic profile information needed to authenticate the connection</li>
-  <li>A list of Facebook Pages the operator manages</li>
-  <li>Permission to publish posts, images, and engagement content to those Pages</li>
-  <li>Basic Page insights, where applicable</li>
+<li>Basic profile information needed to authenticate the connection</li>
+<li>A list of Facebook Pages the operator manages</li>
+<li>Permission to publish posts, images, and engagement content to those Pages</li>
+<li>Basic Page insights, where applicable</li>
 </ul>
-
 <h3>TikTok</h3>
 <p>The App connects to the TikTok API using OAuth to access only the
 information necessary to schedule and publish content, including:</p>
 <ul>
-  <li>Basic profile information needed to authenticate the connection
-    (<code>user.info.basic</code>, <code>user.info.profile</code>)</li>
-  <li>Permission to create, upload, and publish video and photo content to the
-    operator's own TikTok account (<code>video.create</code>,
-    <code>video.upload</code>, <code>video.publish</code>)</li>
+<li>Basic profile information needed to authenticate the connection
+(<code>user.info.basic</code>, <code>user.info.profile</code>)</li>
+<li>Permission to create, upload, and publish video and photo content to the
+operator's own TikTok account (<code>video.create</code>,
+<code>video.upload</code>, <code>video.publish</code>)</li>
 </ul>
 <p>The App does not access TikTok direct messages, private analytics beyond
 what TikTok's API exposes to the operator's own account, or any data
 belonging to other TikTok users.</p>
-
+<h3>Pinterest</h3>
+<p>The App connects to the Pinterest API using OAuth to access only the
+information necessary to schedule and publish content, including:</p>
+<ul>
+<li>Basic profile information needed to authenticate the connection</li>
+<li>A list of boards the operator manages</li>
+<li>Permission to create and publish Pins to the operator's own boards</li>
+</ul>
+<p>The App does not access data belonging to other Pinterest users, and does
+not use Pinterest data for any purpose beyond scheduling and publishing the
+operator's own content.</p>
 <h2>How information is used</h2>
-<p>Information retrieved via the Facebook, Instagram, and TikTok APIs is used
-solely to display connected accounts within the App and to publish content
-that the operator has explicitly composed and scheduled. No information is
-sold, shared with third parties, or used for advertising purposes.</p>
-
+<p>Information retrieved via the Facebook, Instagram, TikTok, and Pinterest
+APIs is used solely to display connected accounts within the App and to
+publish content that the operator has explicitly composed and scheduled. No
+information is sold, shared with third parties, or used for advertising
+purposes.</p>
 <h2>How content is published to TikTok</h2>
 <p>Content submitted to TikTok is sent using TikTok's Content Posting API. The
 operator may choose to post directly (subject to TikTok's audit status and
@@ -84,39 +89,38 @@ process, TikTok restricts posts made through the API to private
 (<code>SELF_ONLY</code>) visibility, and limits usage to a small number of
 accounts posting within a rolling 24-hour window, in accordance with
 TikTok's Developer Terms of Service and Direct Post API guidelines.</p>
-
 <h2>Data storage</h2>
 <p>Access tokens and any content queued for publishing are stored on
 infrastructure controlled directly by the operator and are not transmitted
 to any third party beyond what is required to communicate with the
-Facebook, Instagram, and TikTok APIs themselves.</p>
+Facebook, Instagram, TikTok, and Pinterest APIs themselves.</p>
 <p>Media files that TikTok requires to fetch by URL (rather than direct
 upload) are served over HTTPS from infrastructure controlled by the
 operator, and are only reachable by TikTok's servers for the purpose of
 retrieving that specific media.</p>
-
 <h2>Data retention and deletion</h2>
 <p>Data is retained only as long as needed to operate the App. The operator
 may delete stored tokens and associated data at any time by disconnecting
 the integration, or by removing the App's access via:</p>
 <ul>
-  <li>Facebook's Business Integrations settings at
-    <a href="https://www.facebook.com/settings?tab=business_tools">facebook.com/settings?tab=business_tools</a></li>
-  <li>TikTok's connected apps settings within the TikTok app
-    (Profile &rarr; Settings and privacy &rarr; Security &rarr; Manage apps)</li>
+<li>Facebook's Business Integrations settings at
+<a href="https://www.facebook.com/settings?tab=business_tools">facebook.com/settings?tab=business_tools</a></li>
+<li>TikTok's connected apps settings within the TikTok app
+(Profile &rarr; Settings and privacy &rarr; Security &rarr; Manage apps)</li>
+<li>Pinterest's apps settings at
+<a href="https://www.pinterest.com/settings/apps">pinterest.com/settings/apps</a></li>
 </ul>
-
 <h2>Third parties</h2>
-<p>This App does not share data collected via the Facebook, Instagram, or
-TikTok APIs with any third party. It communicates only with those
-platforms' own API endpoints to publish content on the operator's behalf.</p>
-<p>This policy applies to the use of the Facebook Graph API and the TikTok
-API by this self-hosted Postiz instance, in accordance with Meta Platform
-Terms and TikTok's Developer Terms of Service, respectively.</p>
-
+<p>This App does not share data collected via the Facebook, Instagram,
+TikTok, or Pinterest APIs with any third party. It communicates only with
+those platforms' own API endpoints to publish content on the operator's
+behalf.</p>
+<p>This policy applies to the use of the Facebook Graph API, the TikTok API,
+and the Pinterest API by this self-hosted Postiz instance, in accordance
+with Meta Platform Terms, TikTok's Developer Terms of Service, and
+Pinterest's Developer & API Terms, respectively.</p>
 <h2>Contact</h2>
 <p>Questions about this policy can be directed to the operator of this
 instance via the GitHub repository associated with this page.</p>
-
 </body>
 </html>
